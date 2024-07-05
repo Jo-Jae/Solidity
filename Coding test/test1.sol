@@ -32,7 +32,11 @@ contract TEST1 {
         students.push(Student(_name, _number, _score, _grade));
     }
 
-    
+    mapping(string =>)
+
+    function search()
+
+
 
 
 
