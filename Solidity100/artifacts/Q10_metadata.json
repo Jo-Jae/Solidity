@@ -4,7 +4,47 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					}
+				],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "popA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					}
+				],
+				"name": "pushA",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +73,11 @@
 	},
 	"sources": {
 		"Solidity100/solidity100(1~10).sol": {
-			"keccak256": "0x4fb74aa02a2373ffda1d0ce5ce28f27c431810227f7a107a522c05024f78ae60",
+			"keccak256": "0x3ee274f2b0a82d54688cc8ab337b05e730fa5b3c157a77d5d7d4723b2f72dd89",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://1cf85c3aaf40ea8f3b0e5655c5e8c0d33a7f45cb334807ebe7b83746455e5d5f",
-				"dweb:/ipfs/QmQULoAZ1u1AuzZxqH9WxYTAvfcFAvh2H1w3ct4AenwFLe"
+				"bzz-raw://ec09a9156d7df2b5fb6f152a6cc1220064df16d04daf4b2828b6e5429927c0f5",
+				"dweb:/ipfs/QmXVaxWTfYqbHKfPcG4xvhnXqZ2cRQinD2QzuFmxMzQT1q"
 			]
 		}
 	},
