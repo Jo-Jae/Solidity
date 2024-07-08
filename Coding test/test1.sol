@@ -127,6 +127,12 @@ student[] Students;
 //* 보충반 조회 기능 - F 학점을 받은 학생들의 숫자와 그 전체 정보를 반환
 
     function GradeF() public view returns(uint, student[] memory){
-        
+        uint a; // f학점받은 학생 수 설정
+        uint i;
+
+        for (i=0; i<Students.length + 1; i++ )
+          if (keccak256(abi.encodePacked(students4[i].grade)) == keccak256(abi.encodePacked("F"))) {
+            return 
+          }
     }
 }

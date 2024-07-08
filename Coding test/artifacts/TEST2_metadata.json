@@ -330,11 +330,11 @@
 	},
 	"sources": {
 		"Coding test/test1.sol": {
-			"keccak256": "0xfe48cad1c7ef6e6894aed145546a1335168b524d5d5a21c19cc003a6ad330801",
+			"keccak256": "0x99458e0ee8bc42443556e22219d10171557bcf98afb8b744f67fc084712747e7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5dd0ef92770bb02fae19b46f7c7cadb178a566d9b3873e41d72e53310c1ec09b",
-				"dweb:/ipfs/QmYTS3R3XdjbUwM4FefP8QFuXX6Y1mGLa6CRuQDDT3ZbPk"
+				"bzz-raw://4823923a0b73c67515039c7a0eaa1d85efa22865725b4216b9f50c1b1aa0c2e4",
+				"dweb:/ipfs/QmZqsWiX8vGmyjeKbxemh9h9Nfv3B6AYUnPpw3F5zGxZh9"
 			]
 		}
 	},
