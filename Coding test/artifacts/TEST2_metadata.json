@@ -7,6 +7,46 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "getAllStudent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "num",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "grade",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "class",
+								"type": "string[]"
+							}
+						],
+						"internalType": "struct TEST2.student[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getLength",
 				"outputs": [
 					{
@@ -171,7 +211,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Coding test/test2.sol": "TEST2"
+			"Coding test/test1.sol": "TEST2"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -185,12 +225,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Coding test/test2.sol": {
-			"keccak256": "0xc226f26f5560750671618df5a0ccd287a6ad52e3d611317e03a17866e155c9a3",
+		"Coding test/test1.sol": {
+			"keccak256": "0x708d9ecd7bf916bb8a508109a9e2002718e09f35bab20eba41600173eb67f4d7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a49346bccf750bc1618b786bc75940b1e8b0cd3edb9d2e6cc50ff3ceee179907",
-				"dweb:/ipfs/QmPZqZSLiXaGQgoJgQNiKGkZLkCnmfgGK1XmGy7WGBWNXB"
+				"bzz-raw://8c3348fed5b92e0c3259b146da2ba850cbf50d77b599db6af72a95add62e1efb",
+				"dweb:/ipfs/Qmekqd54Ab6jsV26f2fqP8VSKm6Pj1rTRGpqmWft4WyCkf"
 			]
 		}
 	},

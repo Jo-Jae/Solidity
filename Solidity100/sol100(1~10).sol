@@ -134,12 +134,12 @@ contract Q7 {
         }
     }
 
-    function sumA() public pure returns(uint) {
+    function sumA() public view returns(uint) {
         uint a;
         uint i;
 
-        for(i=0; i<=5; i++){
-           a = a + i ;
+        for(i=0; i<numbers.length; i++){
+           a = a + numbers[i];
         } 
         return a;
     }
