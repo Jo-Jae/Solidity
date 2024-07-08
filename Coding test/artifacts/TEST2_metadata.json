@@ -7,6 +7,64 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "Average",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "GradeF",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "num",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "grade",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "class",
+								"type": "string[]"
+							}
+						],
+						"internalType": "struct TEST2.student[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getAllStudent",
 				"outputs": [
 					{
@@ -61,12 +119,96 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "getScore",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "getScores",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "getstudentName",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "num",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "score",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "grade",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "class",
+								"type": "string[]"
+							}
+						],
+						"internalType": "struct TEST2.student[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "_num",
 						"type": "uint256"
 					}
 				],
-				"name": "getstudent",
+				"name": "getstudentNum",
 				"outputs": [
 					{
 						"components": [
@@ -110,57 +252,6 @@
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
-					}
-				],
-				"name": "getstudent",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "name",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "num",
-								"type": "uint256"
-							},
-							{
-								"internalType": "uint256",
-								"name": "score",
-								"type": "uint256"
-							},
-							{
-								"internalType": "string",
-								"name": "grade",
-								"type": "string"
-							},
-							{
-								"internalType": "string[]",
-								"name": "class",
-								"type": "string[]"
-							}
-						],
-						"internalType": "struct TEST2.student[]",
-						"name": "",
-						"type": "tuple[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_num",
-						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
@@ -196,6 +287,19 @@
 				],
 				"stateMutability": "pure",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "teach",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -226,11 +330,11 @@
 	},
 	"sources": {
 		"Coding test/test1.sol": {
-			"keccak256": "0x708d9ecd7bf916bb8a508109a9e2002718e09f35bab20eba41600173eb67f4d7",
+			"keccak256": "0xfe48cad1c7ef6e6894aed145546a1335168b524d5d5a21c19cc003a6ad330801",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://8c3348fed5b92e0c3259b146da2ba850cbf50d77b599db6af72a95add62e1efb",
-				"dweb:/ipfs/Qmekqd54Ab6jsV26f2fqP8VSKm6Pj1rTRGpqmWft4WyCkf"
+				"bzz-raw://5dd0ef92770bb02fae19b46f7c7cadb178a566d9b3873e41d72e53310c1ec09b",
+				"dweb:/ipfs/QmYTS3R3XdjbUwM4FefP8QFuXX6Y1mGLa6CRuQDDT3ZbPk"
 			]
 		}
 	},

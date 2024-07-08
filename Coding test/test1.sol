@@ -45,12 +45,13 @@ struct student {
     string[] class;
 }
 
-student s1;
 student[] Students;
 
-    function pushStudent(string memory _name, uint _num, uint _score, string[] memory _class) public {
-        Students.push(student(_name, _num, _score, setGrade(_score), _class));
+//* 학생 추가 기능 - 특정 학생의 정보를 추가
+    function pushStudent(string memory _name, uint _score, string[] memory _class) public {
+        Students.push(student(_name, Students.length, _score, setGrade(_score), _class));
     }
+
 
     function setGrade(uint _score) public pure returns(string memory){
         if ( _score <= 100 && _score >= 90 ) {
@@ -68,27 +69,64 @@ student[] Students;
 
     mapping(string => student[]) students1;
     mapping(uint => student[]) students2;
+    mapping(string => student) students3;
+    mapping(uint => student) students4;
 
-    function getstudent(uint _num) public view returns(student[] memory) {
+//* 학생 조회 기능(1) - 특정 학생의 번호를 입력하면 그 학생 전체 정보를 반환
+    function getstudentNum(uint _num) public view returns(student[] memory) {
         return students2[_num];
     }
 
-    function getstudent(string memory _name) public view returns(student[] memory) {
+//* 학생 조회 기능(2) - 특정 학생의 이름을 입력하면 그 학생 전체 정보를 반환
+    function getstudentName(string memory _name) public view returns(student[] memory) {
         return students1[_name];
     }
 
-    // function getScore(string memory _name) public view returns() {
+//* 학생 점수 조회 기능 - 특정 학생의 이름을 입력하면 그 학생의 점수를 반환
+    function getScore(string memory _name) public view returns(uint) {
+        return students3[_name].score;
+    } // 잘 모르겠음..
 
-    // }
-
+//* 학생 전체 숫자 조회 기능 - 현재 등록된 학생들의 숫자를 반환
     function getLength() public view returns(uint) {
         return Students.length;
     }
 
+//* 학생 전체 정보 조회 기능 - 현재 등록된 모든 학생들의 정보를 반환
     function getAllStudent() public view returns(student[] memory) {
         return Students;
     }
 
 
+//* 학생들의 전체 평균 점수 계산 기능 - 학생들의 전체 평균 점수를 반환
+     function getScores(uint i) public view returns(uint) {
+        return students4[i].score;
+    }
 
+    function Average() public view returns(uint) {
+        uint sum;
+        uint i;
+
+        for (i=0; i<Students.length + 1; i++) {
+         sum = sum + getScores(i);
+        }
+        return sum / Students.length;
+    } //잘 모르겠음..
+
+
+//* 선생 지도 자격 자가 평가 시스템 - 학생들의 평균 점수가 70점 이상이면 true, 아니면 false를 반환
+
+    function teach() public view returns(bool){
+        if (Average() >= 70) {
+            return true;
+        } else {
+            return false;
+        }
+    } 
+
+//* 보충반 조회 기능 - F 학점을 받은 학생들의 숫자와 그 전체 정보를 반환
+
+    function GradeF() public view returns(uint, student[] memory){
+        
+    }
 }
