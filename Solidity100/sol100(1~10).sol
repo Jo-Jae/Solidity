@@ -138,7 +138,7 @@ contract Q7 {
         uint a;
         uint i;
 
-        for(i=0; i<numbers.length; i++){
+        for(i=0; i<numbers.length + 1; i++){
            a = a + numbers[i];
         } 
         return a;

@@ -4,7 +4,21 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "pushNum",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +47,11 @@
 	},
 	"sources": {
 		"Solidity100/sol100(11~20).sol": {
-			"keccak256": "0xfe31b31b1ae4cc0eb6958de1f4c72714a9ff092f10cb7b64b9690a0bec331b63",
+			"keccak256": "0x2527b22fcc3f088618d65a9e9268bbc2cf4ff9a70588445189f1de2d0e2107ca",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f66f072948b83c94527be009fc44641ba162477f1e07e206bd1b5bbbd6a15492",
-				"dweb:/ipfs/QmUe6PJKokszc9fzVwGvBHsXCQmTdf81zzVYKvLPvCd8te"
+				"bzz-raw://141744da780ac9320aa1f2e23b95fc20810948ccf05b60e5e84b21b5671096a5",
+				"dweb:/ipfs/QmcVM1EEct5q5bjuvSEREYAJ6zMnNDAfgJQXnGkb7JnPmt"
 			]
 		}
 	},
