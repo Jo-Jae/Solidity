@@ -85,9 +85,11 @@ student[] Students;
         return Students.length;
     }
 
-    function getAllStudent() public view returns(string memory, uint, uint, string, string[] memory) {
+    function getAllStudent() public view returns(string memory, uint, uint, string memory, string[] memory) {
         return Students;
     }
+
+
 
 
 
