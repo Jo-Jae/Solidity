@@ -59,8 +59,11 @@ contract Q14 {
     student[] students;
 
     function pushStudent(string memory _name, string[] memory _class) public {
-      students.push(student(_name, students.length, _class));
+      students.push(student(_name, students.length + 1, _class));
     }
+
+    function getS() public view returns(student[] memory){
+        return students;}
 
 }
 
@@ -143,6 +146,10 @@ contract Q20 {
     /*  숫자만 들어가는 배열을 선언하고 숫자를 넣는 함수를 구현하세요. 
     15개의 숫자가 들어가면 3의 배수 위치에 있는 숫자들을 초기화 시키는(3번째, 6번째, 9번째 등등) 함수를 구현하세요. 
     (for 문 응용 → 약간 까다로움)  */
+    
+    //문제에 대한 질문이 있습니다
+    //숫자가 15개까지만 들어가는 건가요.. 
+    //15개 이상이 들어갈 수 있는데 숫자 15개마다 3의배수 자리에 있는 것들만 초기화 하는건가요?
 
     uint[] num;
 
@@ -150,18 +157,29 @@ contract Q20 {
         num.push(_n);
     }
 
-    function setNum() public {
+    function pushNum2() public{
         uint i;
 
-        if (num.length == 15) {
-        if ( num[] %3==0 ) {
-            delete num[]
-            for(i=0; i < num.length + 1; i++){
-                num[ ] %3==0 = 0;
-
-            }
+        for (i=1; i<16; i++){
+            num.push(i);
         }
     }
+//15개의 숫자가 들어가면 3의 배수 위치에 있는 숫자들을 초기화 시키는(3번째, 6번째, 9번째 등등) 함수를 구현
+    function setNum() public { //어찌저찌해서 풀었는데 맞는 풀이인지는 도저히 모르겠음... 
+        uint i;
 
+     if (num.length == 15){
+       for(i=2; i < num.length; i+=3){
+          delete num[i];
+            }
+       }
+    }
 
+    function getNum() public view returns(uint[] memory) {
+        return num;
+    }
+
+     function getNum2() public view returns(uint) {
+        return num.length;
+    }
 }
