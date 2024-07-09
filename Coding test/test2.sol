@@ -33,7 +33,9 @@ student[] students;
         uint i;
 
           for (i=0; i<students.length + 1; i++ )
-        {   while students(i).score< students(i+1).score}
+        {   while (students(i).score < students(i+1).score}){
+            
+        }
     }//갈피를 못잡겠음..
 
 
