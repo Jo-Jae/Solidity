@@ -4,7 +4,32 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_PW",
+						"type": "string"
+					}
+				],
+				"name": "hash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +58,11 @@
 	},
 	"sources": {
 		"Solidity100/sol100(21~30).sol": {
-			"keccak256": "0x0a4d944c5a8242b9c9960c0d05d08007d4515461ac1a6749eb73f744e139e11a",
+			"keccak256": "0x8bb71ac3150e41f2c6386559d50e9bf14b668f30ae371fe635f2a8a8e4c9cd01",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f26bb7c47dbaa1206679ed384c1d7562f656a65948bf54876d5e1a7a8e20e65c",
-				"dweb:/ipfs/QmPf99UUFiBS9trMnvsd8vy55RaYDRH11WDssFnLZUCyDz"
+				"bzz-raw://3c0f6c24999b4caacbc1461a4df7399afcefa180f9a3a98b8ce3761801fd659c",
+				"dweb:/ipfs/QmbfJ6TNWhZkjfm68FN4VdaWveRtgCS4fvfYypQ4yGfPfk"
 			]
 		}
 	},
