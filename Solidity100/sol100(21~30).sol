@@ -119,8 +119,16 @@ contract Q27 {
 
     mapping (string => bytes32) m;
 
-    function setM(string memory _a) public view returns(bytes32){
-       return m[_a]; 
+    function setM(string memory _a, bytes32 _b) public {
+        m[_a] = _b; 
+    }
+
+    function getM(string memory _a) public view returns(bytes32) {
+        return m[_a];
+    }
+
+    function deleteM(string memory _a) public {
+        delete m[_a];
     }
 }
 

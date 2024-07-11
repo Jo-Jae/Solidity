@@ -23,6 +23,10 @@ abi.encodePacked() 사용하기
 * 회원탈퇴 기능 - 회원이 자신의 ID와 PW를 넣고 회원탈퇴 기능을 실행하면 관련 정보 삭제
 */
 
+
+/*아이디, 비밀번호 배열
+
+*/
     mapping (string => string) IDPW;
     mapping (string => bytes32) V_PW;
     mapping (bytes32 => bytes32) V_IDPW;
