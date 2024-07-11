@@ -26,7 +26,7 @@ abi.encodePacked() 사용하기
     mapping (string => string) IDPW;
     mapping (string => bytes32) V_PW;
     mapping (bytes32 => bytes32) V_IDPW;
-    uint[] A_IDPW;
+    bytes32[] A_IDPW;
 
 
 
