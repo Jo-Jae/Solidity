@@ -147,20 +147,19 @@ contract Q29 {
         숫자형 변수 a와 문자형 변수 b를 각각 10 그리고 “A”의 값으로 배포 직후 설정하는 contract를 구현하세요.
     */
     
-    //질문.. 'A의 값으로 배포 직후 설정', 이 문장이 이해가 잘 안갑니다
     uint a;
     string b;
-    string c;
-
-    constructor (string memory _A) {
+ 
+    constructor () {
         a = 10;
-        b = "10";
-        c = _A;
+        b = "A";
     }
 
-    function getC() public view returns(string memory) {
-        return c;
-    }
+   
+
+    function getAB() public view returns(uint, string memory){
+        return (a,b);
+    } 
 }
 
 contract Q30 {

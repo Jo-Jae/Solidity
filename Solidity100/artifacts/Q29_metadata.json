@@ -6,20 +6,19 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_A",
-						"type": "string"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
 				"inputs": [],
-				"name": "getC",
+				"name": "getAB",
 				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
 					{
 						"internalType": "string",
 						"name": "",
@@ -58,11 +57,11 @@
 	},
 	"sources": {
 		"Solidity100/sol100(21~30).sol": {
-			"keccak256": "0xd680f333274eeef345e391f05adb61af74d76d701301699ad19af08142980cbb",
+			"keccak256": "0x5d999d3c4ccd625815626b4bb62172e88ee83c0ea8d94d50be8a89af2949b381",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e4e9cef44f5cb3cee0bc05718330adc344d7d4b37b9ce18138cc8979f0e347cc",
-				"dweb:/ipfs/QmToHt2FkmFUH4qKe5dTyrotmpNYQ9uojLoHPkJGZChY1j"
+				"bzz-raw://0659e8fc42e12b04c576ab151e28336941fdf23d5347acc745648c48d5eb94c0",
+				"dweb:/ipfs/QmXB7kASGpCm9geX25vk6jw2mps7tTBoKWGHpYB6Q11gST"
 			]
 		}
 	},
