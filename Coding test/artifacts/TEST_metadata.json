@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Coding test/test5.sol": "TEST1"
+			"Coding test/test5.sol": "TEST"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"Coding test/test5.sol": {
-			"keccak256": "0xf670dcdb02b0c1f88c688a53800322b1f2153d18e27c6efa3598b44d7fa83b12",
+			"keccak256": "0x1f8a12b1f0d3da8acb0e600f18bcb7cecda1ffbb6f68d5dde7ab8f48942d1f07",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://a770623eb3e155cfcd5b2a8e31a613d5c3fa48ebf600556eb5db2e18b2650284",
-				"dweb:/ipfs/QmVPNHhequhVu8BEDMr3oSQvMGUJ2u52xDSzfAuwnor3mN"
+				"bzz-raw://3951edf20bd3a0fa9d4eea00982ef30248ef5e50522f1d9595fc7520c358cd51",
+				"dweb:/ipfs/QmUnhDFCb2nrFXUNrg6eUW46tgXpv6wdjR6wvmjSNVD3Vw"
 			]
 		}
 	},

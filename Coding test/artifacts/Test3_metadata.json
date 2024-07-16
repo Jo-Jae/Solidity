@@ -6,10 +6,77 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_PW",
+						"type": "string"
+					}
+				],
+				"name": "CheckId",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "givePoint",
+				"name": "pushA_IDPW",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ID",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_PW",
+						"type": "string"
+					}
+				],
+				"name": "setV_IDPW",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_PW",
+						"type": "string"
+					}
+				],
+				"name": "setV_PW",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -26,7 +93,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Coding test/test4.sol": "Test3"
+			"Coding test/test3.sol": "Test3"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -40,12 +107,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Coding test/test4.sol": {
-			"keccak256": "0x138553f741c690f315d84332373ebba27db93ab3bbdad8d1340097b168eac86f",
+		"Coding test/test3.sol": {
+			"keccak256": "0xd264794c620aec95426bd2749e31a9e4d07498165399ead6f9078c89cf1a8238",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c3006f47bceb19eb65dd2415242fc7158313e5b717ce46be0f4113d9ac352623",
-				"dweb:/ipfs/QmZ4FXXLWJ4z6kJcM3KKB14Kn4VtMWMcWaQaDGNukqiXr1"
+				"bzz-raw://4ef324c7173cdd8a9aef9a9a141d6bd6eca2698e55a3359d60f8a50e2029b935",
+				"dweb:/ipfs/Qmc1T7Eu3Cn8jsZFVvFStEs5tk38PDMGzTdbsT3ixFmA2d"
 			]
 		}
 	},
