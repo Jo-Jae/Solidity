@@ -17,7 +17,7 @@ contract TEST5 {
 
         if (_n >= 3600) {}
 
-            return (0,"hour",0,"mint",_n,"sec");
+            return (,"hour",,"mint",_n,"sec");
         } else if (_n >= 60) {
             return (0,"hour",( _n / 60) ,"min", (_n % 60) ,"sec")
         } else return (0,"hour",0,"mint",_n,"sec");
