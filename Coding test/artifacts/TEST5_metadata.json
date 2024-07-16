@@ -78,11 +78,11 @@
 	},
 	"sources": {
 		"Coding test/test5.sol": {
-			"keccak256": "0xc482b33a39afd344c730c8258d8181c2470c5add8b56d3ad32543907a838b98c",
+			"keccak256": "0x0e3a7b71ed0a42ae26ec4b1ea2622290062261c32681fc8524135728fbfd49fd",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://c24ef2f31ef04eb59b16b4a5d93093082b18ab8e6d79681b5d5f0f03303d9e42",
-				"dweb:/ipfs/QmUMH9LCrSps5rJPQ5bdcmHoEunkESCQjHqgzoE4A3dJmq"
+				"bzz-raw://ea8ab85c2931531d30e906a51aa37cf9072763e6095e93fe8c08ff65f19c888a",
+				"dweb:/ipfs/Qmd5XJfWHsvrCe2B1zZ9KgCbJJR4wfuMK7yBNiH7hzQqZf"
 			]
 		}
 	},

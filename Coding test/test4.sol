@@ -71,3 +71,61 @@ user[4] users;
     
 
 }
+
+
+address payable owner;
+mapping(address=>USER) users;
+USER[4] room;
+uint public idx=1;
+
+constructor() {
+    owner = payable(msg.sender);
+}
+
+    function signIN(string memory _name) public {
+      users[msg.sender]  = USER(idx++, _name, msg.sender, 0 ,0)
+    }
+
+    function search(address _addr) public view returns(USER memory) {
+        
+    }
+
+    function join() public payable {
+        require(msg.value == 0.01 ether, "Nope");
+
+        if(getLength()==3){
+            room[3] = users[msg.sender];
+            delete room;
+        } else {
+            room[getLength()] = users[msg.sender]
+        }
+
+    }
+
+    function getLength() public view returns(uint) {
+        for(uint i=0; i<4; i++) {
+            if(room[i].number == 0){
+                return i;
+        }
+        return 4;
+    }
+
+    function getScore() public {
+        for(uint i=0; i<4; i++){
+            room[i].score += 4 - i;
+    }
+
+    function withDrawTen() public {
+        require(users[msg.sender].score >= 10, "nope");
+        users[msg.sender].score -=10;
+        payable(msg.sender).transfer(0.1 ether);
+    }
+
+    function withDraw(uint _n) public {
+     require(users[msg.sender].score >= _n, "nope");
+        users[msg.sender].score -= _n;
+        payable(msg.sender).transfer((_n/10) * 0.1 ether);
+    }
+
+    
+

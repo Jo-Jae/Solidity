@@ -13,14 +13,11 @@ contract TEST5 {
 */
 
     function getTime(uint _n) public pure returns(uint,string memory, uint, string memory,uint, string memory){
-       uint a;
-
-        if (_n >= 3600) {}
-
-            return (,"hour",,"mint",_n,"sec");
+        if (_n >= 3600) {
+            return ((_n/3600),"hour",(_n % 3600 / 60),"min",(_n % 60),"sec");
         } else if (_n >= 60) {
-            return (0,"hour",( _n / 60) ,"min", (_n % 60) ,"sec")
-        } else return (0,"hour",0,"mint",_n,"sec");
+            return (0,"hour",( _n / 60) ,"min", (_n % 60) ,"sec");
+        } else return (0,"hour",0,"min",_n,"sec");
     }
 
 }
