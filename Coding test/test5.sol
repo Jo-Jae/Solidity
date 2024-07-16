@@ -17,10 +17,10 @@ contract TEST5 {
 
         if (_n >= 3600) {}
 
-            return ;
+            return (0,"hour",0,"mint",_n,"sec");
         } else if (_n >= 60) {
-            return (( _n / 60) ,"min", (_n % 60) ,"sec")
-        } else return (_n,"sec");
+            return (0,"hour",( _n / 60) ,"min", (_n % 60) ,"sec")
+        } else return (0,"hour",0,"mint",_n,"sec");
     }
 
 }
