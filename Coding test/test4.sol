@@ -73,6 +73,8 @@ user[4] users;
 }
 
 
+
+/*
 address payable owner;
 mapping(address=>USER) users;
 USER[4] room;
@@ -81,6 +83,16 @@ uint public idx=1;
 constructor() {
     owner = payable(msg.sender);
 }
+
+    function withDraw(uint _n) public {
+        require(msg.sender == owner, "nope")
+        owner.transfer(_n * 0.01 ether);
+    }
+
+    function withDraOwnerMax() public {
+        require(msg.sender == owner, "nope");
+        owner.transfer(address(this).balance)
+    }
 
     function signIN(string memory _name) public {
       users[msg.sender]  = USER(idx++, _name, msg.sender, 0 ,0)
@@ -91,7 +103,11 @@ constructor() {
     }
 
     function join() public payable {
-        require(msg.value == 0.01 ether, "Nope");
+        require(msg.value == 0.01 ether || users[msg.sender].balance >= 0.01 ether, "Nope");
+
+        if(msg.value ==0) {
+            users[msg.sender].balance -= 0.01 ether;
+        }
 
         if(getLength()==3){
             room[3] = users[msg.sender];
@@ -127,5 +143,11 @@ constructor() {
         payable(msg.sender).transfer((_n/10) * 0.1 ether);
     }
 
-    
+    function deposit() public payable {
+        users[msg.sender].balance += msg.value;
+    }
+
+   
+
+*/
 

@@ -4,52 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_n",
-						"type": "uint256"
-					}
-				],
-				"name": "getTime",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -63,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Coding test/test5.sol": "TEST5"
+			"Coding test/test6.sol": "TEST5"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -77,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Coding test/test5.sol": {
-			"keccak256": "0x0e3a7b71ed0a42ae26ec4b1ea2622290062261c32681fc8524135728fbfd49fd",
+		"Coding test/test6.sol": {
+			"keccak256": "0x2d039373f45575fb69988fb9e04b5e133d549671bb350467b85781ce3e76a75b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://ea8ab85c2931531d30e906a51aa37cf9072763e6095e93fe8c08ff65f19c888a",
-				"dweb:/ipfs/Qmd5XJfWHsvrCe2B1zZ9KgCbJJR4wfuMK7yBNiH7hzQqZf"
+				"bzz-raw://f8e874f49aa0fe866fd908ec38bfe06b98841381686261aa1da24ed19d601be6",
+				"dweb:/ipfs/QmUi6rjVoJ7xds3qpHyZWj5mfaTUJzuvTGW2yrUNj4nVwL"
 			]
 		}
 	},

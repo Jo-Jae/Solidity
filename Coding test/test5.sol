@@ -21,3 +21,26 @@ contract TEST5 {
     }
 
 }
+
+import "openzepplin/contracts/utils/Strings.sol";
+
+contract BASE {
+    function S_concat(string memory _a, string memory _b) public pure returns(string memory){
+        return string.concat(_a,_b);
+    }
+}
+
+contract Test5 {
+
+    function convert(uint _n) public pure returns(uint, uint, uint) {
+        return (_n/3600, (_n%3600)/60, _n%60);
+    }
+
+    function getHMS(uint  _n) public pure returns(string memory){
+        (uint a, uint b, uint c) = convert(_n);
+        return string(abi.encodePacked(Strings.toString(a), uincode"시간", Strings.toString(b), uincode"min", Strings.toString(c), unicode"sec");
+
+    }
+
+
+}
