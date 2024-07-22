@@ -35,7 +35,8 @@ contract TEST6 {
 
     function setnum(uint _n)public pure returns(uint){
         uint i;
-        for (i=1; i < _n; i 10)
+        for (i=1; i < _n; 10**i)
+        
     }
 
 
