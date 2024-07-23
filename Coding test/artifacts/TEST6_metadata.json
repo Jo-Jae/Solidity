@@ -7,71 +7,37 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "getNum",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "numbers",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_n",
-						"type": "uint256"
-					}
-				],
-				"name": "push",
+				"name": "Accel",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_n",
-						"type": "uint256"
-					}
-				],
-				"name": "setnum",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
+				"inputs": [],
+				"name": "Brake",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Refill",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TurnOff",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TurnOn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -88,7 +54,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Coding test/test6.sol": "TEST6"
+			"Coding test/test7.sol": "TEST6"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -102,12 +68,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Coding test/test6.sol": {
-			"keccak256": "0x4657223e19bd91e6e882d860bf3a5290716524ddbd455b159b4819cabd2dde8e",
+		"Coding test/test7.sol": {
+			"keccak256": "0xfe0e6994c36c1ef13d341954df92c3cb73e016224943a48a8d12c4e22d097b2f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://d16de341f613f31084a954f0c71b483e8d37ba354c5a0180927e447a283d955a",
-				"dweb:/ipfs/QmatLfoLa6fXQh2rkRemCqsZUsCurvMvBsrCVTqQYkU8XE"
+				"bzz-raw://6f3ee099bbc6fcc11c6292a534ce81e13335ce325a45d587bbf252b74a7df9e3",
+				"dweb:/ipfs/QmUPrYz4g7k4zcPVJ9r5DZNhApsMcCUfUDJwHiqTWrKJUr"
 			]
 		}
 	},
