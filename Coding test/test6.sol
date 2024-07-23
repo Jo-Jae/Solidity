@@ -41,3 +41,11 @@ contract TEST6 {
 
 
 }
+
+contract Base{
+    function getBytes{bytes memory _b} public pure returns(uint) {
+       return _b.length;
+    }
+
+    
+}

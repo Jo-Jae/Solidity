@@ -2,7 +2,7 @@
 
 pragma solidity >= 0.8.2 < 0.9.0;
 
-contract TEST6 {
+contract TEST7 {
 /* * 악셀 기능 - 속도를 10 올리는 기능, 악셀 기능을 이용할 때마다 연료가 20씩 줄어듬, 
 연료가 30이하면 더 이상 악셀을 이용할 수 없음, 속도가 70이상이면 악셀 기능은 더이상 못씀
 * 주유 기능 - 주유하는 기능, 주유를 하면 1eth를 지불해야하고 연료는 100이 됨
@@ -53,7 +53,7 @@ contract TEST6 {
     }
 
     function Refill() public payable {
-       msg.sender 
+
        s = Status.Refill;
        fuel += 100;
 
