@@ -4,7 +4,27 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "getAliBob",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +38,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Solidity100/sole100(41~50).sol": "Q31"
+			"Solidity100/sol100(31~40).sol": "Q31"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +52,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Solidity100/sole100(41~50).sol": {
-			"keccak256": "0x537418679697d5bcc8afd0055c0148a31fa7d9767b388581793df99c590fe754",
+		"Solidity100/sol100(31~40).sol": {
+			"keccak256": "0x350db11b3e006597aef30dd76e4ec1657e1cceb3e8fc69c6049ff33101877da7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://fb59547c033f3f54333144214cab12570c78b1063322bc5371898cda251f9d53",
-				"dweb:/ipfs/QmNZw84iiCqbpng8VXca4KBWXViYnXfB1osqUPKWB9ZUjD"
+				"bzz-raw://035cd3ea0f13f51f815ef8bb2d8f7184a157590032e5841e7400174662032d52",
+				"dweb:/ipfs/QmZ1EmjR9zuvsrTpj1ykPzoNzzEcpyNFWRjcPrh2UfYt7B"
 			]
 		}
 	},

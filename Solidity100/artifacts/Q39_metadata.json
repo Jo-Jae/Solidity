@@ -53,7 +53,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Solidity100/sole100(31~40).sol": "Q39"
+			"Solidity100/sol100(31~40).sol": "Q39"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -67,12 +67,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Solidity100/sole100(31~40).sol": {
-			"keccak256": "0xb6ebfad7db9a1ae0721b6c7467d4da60d4451c9a25acf6539713867a007d2e42",
+		"Solidity100/sol100(31~40).sol": {
+			"keccak256": "0x350db11b3e006597aef30dd76e4ec1657e1cceb3e8fc69c6049ff33101877da7",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://368d61c37dde4f95a51683ecde7ded4c9abfce6ae155656d62d12f297d15d1a6",
-				"dweb:/ipfs/QmdYK5J2Vpi4okhwuoRatAqCRTnDdXNy92DRak29B2ewNw"
+				"bzz-raw://035cd3ea0f13f51f815ef8bb2d8f7184a157590032e5841e7400174662032d52",
+				"dweb:/ipfs/QmZ1EmjR9zuvsrTpj1ykPzoNzzEcpyNFWRjcPrh2UfYt7B"
 			]
 		}
 	},

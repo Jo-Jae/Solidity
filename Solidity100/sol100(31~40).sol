@@ -99,6 +99,30 @@ contract Q35 {
     예) [1,2,3,4,5,6] -> [2,4,6] // [3,5,7,9,11,13] -> [5,9,13]*/
 
     uint[] num;
+    
+    
+    function push() public{
+        num = [1,2,3,4,5,6,7,8,9,10];
+    }
+
+     function getEvenNum() public returns(uint[] memory) {
+        
+          
+        }
+        
+        
+
+    
+
+    function get() public view returns(uint[] memory){
+        return num;
+    }
+
+    
+
+    
+/*
+   uint[] num;
     uint[] EvenIdx;
 
     function push() public{
@@ -122,8 +146,11 @@ contract Q35 {
     function getEvenNum() public view returns(uint[] memory) {
         return EvenIdx;
     }
+    */
 
 }
+
+
 
 contract Q36 {
     /*high, neutral, low 상태를 구현하세요. 
@@ -154,9 +181,11 @@ contract Q37 {
     /*1 wei를 기부하는 기능, 1finney를 기부하는 기능 그리고 1 ether를 기부하는 기능을 구현하세요. 
     최초의 배포자만이 해당 smart contract에서 자금을 회수할 수 있고 다른 이들은 못하게 막는 함수도 구현하세요.
     (힌트 : 기부는 EOA가 해당 Smart Contract에게 돈을 보내는 행위, contract가 돈을 받는 상황)*/
-    function deposit() public payable {}
+   
    
     address payable owner;
+    mapping(address => uint) balance;
+   
 
     constructor() {
         owner = payable(msg.sender);
@@ -171,11 +200,19 @@ contract Q37 {
         owner.transfer(address(this).balance);
     }
 
-    function Donation() public {
-    msg.sender.transfer.(1 ether);
-
+    function donateEther() public payable {
+      require( msg.value == 1 ether, "nope"); 
     }
 
+     function donateFinney() public payable {
+      require( msg.value == 1 * 10**15, "nope"); 
+    }
+   
+
+    function donateWei() public payable {
+      require( msg.value == 1 wei, "nope"); 
+    }
+    
 
 
 }
