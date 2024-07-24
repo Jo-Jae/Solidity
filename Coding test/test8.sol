@@ -52,7 +52,9 @@ contract TEST8 {
        
         if (keccak256(abi.encodePacked(_isAgree)) == keccak256(abi.encodePacked("agree"))) {
             agree.push(msg.sender);
-        } else if ()
+        } else if (keccak256(abi.encodePacked(_isAgree)) == keccak256(abi.encodePacked("disagree"))) {
+            disagree.push(msg.sender);
+        }
     }
 
 

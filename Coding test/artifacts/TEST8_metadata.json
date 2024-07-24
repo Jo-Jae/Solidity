@@ -87,11 +87,11 @@
 	},
 	"sources": {
 		"Coding test/test8.sol": {
-			"keccak256": "0xc481f6cd677e6a4e58bf65425ac8b44e54832e5c99c0d46935f098b043e74bd9",
+			"keccak256": "0x88334987993ce5e8bf03a0244d8f9af41416ee9ccc92a611d966b9eb0a44c2d0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://47ffa12427753376c056e4ad061f9435345dc1426f7ff4cf4e7d0c75e35db421",
-				"dweb:/ipfs/QmYgzaCx7L5nmpgeeyexaBMTfV7wCkGPmZ5h1gVDvocyaC"
+				"bzz-raw://1cec317f88c2dddd902f9f2d9d0d65b7de61e6c19ac54ab4f95b2f639de8a644",
+				"dweb:/ipfs/QmYhbdim1vdxEQwtno1iDaGUyc2mGQXvpenncESz7Phx9d"
 			]
 		}
 	},
