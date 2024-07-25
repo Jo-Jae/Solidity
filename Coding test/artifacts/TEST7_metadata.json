@@ -4,43 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [],
-				"name": "Accel",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "Brake",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "Refill",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "TurnOff",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "TurnOn",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -54,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Coding test/test7.sol": "TEST7"
+			"Coding test/test9.sol": "TEST7"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -68,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Coding test/test7.sol": {
-			"keccak256": "0x3e5d8b6437961e348bb6b3d37afe3e08c734e6b7ffaa61b8d4fb2094cb50db1b",
+		"Coding test/test9.sol": {
+			"keccak256": "0x502b69a6c4ae4e0404491070a51a29d235158b00303eacd471c73c9a56aaf0b0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4957e24478ba3666712c39a1fae45904c937e552263052fa07b9c753a5190dac",
-				"dweb:/ipfs/QmatvJT5eGGSKu631nN9P4z8k523w5s8swo9a4hjABaPoy"
+				"bzz-raw://6276005db1fb583d47a4fae5c0652239c1615790a86653505a26653e61ff2110",
+				"dweb:/ipfs/QmfL9CfSiBkEnmFurhKwRdiN6FEFr3PDFFDqcEkmHdYkgd"
 			]
 		}
 	},
