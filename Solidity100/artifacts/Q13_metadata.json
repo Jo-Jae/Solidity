@@ -13,7 +13,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "a",
+				"name": "A",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -53,11 +53,11 @@
 	},
 	"sources": {
 		"Solidity100/sol100(11~20).sol": {
-			"keccak256": "0x8aabd326dabd87494f07d0647b772997c5d14eebd71b7fc46cd890246f9b72aa",
+			"keccak256": "0x1461747deb5ce3dd3a7a843c8b564079055f9567fc8b11c2708e5beeff6ea2f0",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://0f5f251d61419c50ab276b544683c30decedaa66bd7fde3a0b2581d108b46eda",
-				"dweb:/ipfs/QmPqmDu7aP5PqWgfHNCFy5Cg5o9HvXP2CeeFN2GiSEFSh7"
+				"bzz-raw://3bba55ff6ccd06903a26f4bb81b3f8478dd6c43aacf61c8f49e8ec368910ae17",
+				"dweb:/ipfs/QmcjHF8NMCpxH4NAaw7tr5WDvyfShnuuSW8uR9ucaSThcU"
 			]
 		}
 	},

@@ -105,20 +105,23 @@ contract Q35 {
         num = [1,2,3,4,5,6,7,8,9,10];
     }
 
-     function getEvenNum() public returns(uint[] memory) {
-        
-          
+     function getEvenNum() public view returns(uint[] memory) {
+            uint[] memory _num = new uint[](num.length/2);
+            uint idx;
+
+            for(uint i=1; i<num.length; i+=2) {
+                _num[idx] = num[i];
+                idx++;
+            }
+          return num;
         }
         
         
-
-    
-
     function get() public view returns(uint[] memory){
         return num;
     }
 
-    
+
 
     
 /*
@@ -272,7 +275,7 @@ contract Q40 {
     [1,5,4,9,6,3,2,11] -> [1,2,3,4,5,6,9,11], 4,5 // 
     [6,3,1,4,9,7,8] -> [1,3,4,6,7,8,9], 6*/
 
-    uint[] num = [12,5,7,4,1,10];
+    uint[] num;
     
 
     function pushNum(uint _a) public {
@@ -281,10 +284,10 @@ contract Q40 {
 
   
 
-     function decending() public view returns(uint[] memory) {
+     function descending() public view returns(uint[] memory) {
         uint[] memory _num = num;
-        for(uint i=0; i < num.length; i++) {
-            for(uint j=i+1; j < num.length; j++) {
+        for(uint i=0; i < _num.length; i++) {
+            for(uint j=i+1; j < _num.length; j++) {
                 if(_num[i] < _num[j]) {
                     (_num[i], _num[j]) = (_num[j], _num[i]);
                 }
@@ -294,10 +297,17 @@ contract Q40 {
         return _num;
     }
 
-    function getNum() public view returns(uint[] memory) {
-        if (num.length % 2 == 0) {
-            decending();} else { decending();}
+    function getNum(uint[] memory _num) public view returns(uint[] memory) {
+
+       uint[] memory median = new uint[](2 - _num.length %2);
+
+       if(median.length == 1) {
+        median[0] = _num[_num.length/2];
+    } else{
+        median[0] = _num[_num.length / 2 -1];
+        median[1] = _num[_num.length / 2];
     }
+        return median;
 
-
+}
 }

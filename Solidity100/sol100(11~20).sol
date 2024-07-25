@@ -34,12 +34,12 @@ contract Q12 {
 contract Q13 {
     /*  3의 배수라면 “A”를, 나머지가 1이 있다면 “B”를, 나머지가 2가 있다면 “C”를 반환하는 함수를 구현하세요.  */
 
-    function a(uint _a) public pure returns(string memory) {
+    function A(uint _a) public pure returns(string memory) {
         if ( _a % 3 == 0) {
             return "A";
         } else if ( _a % 3 == 1) {
             return "B";
-        } else if ( _a % 3 == 2) {
+        } else if( _a % 3 == 2) {
             return "C";
         }
     }
