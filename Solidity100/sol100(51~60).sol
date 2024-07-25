@@ -46,7 +46,27 @@ contract Q53 {
     힌트 : 이중 mapping을 꼭 이용하세요.
 */
     
-   // mapping( =>mapping( =>))
+   mapping(address => mapping(address => uint)) balance;
+
+    address payable  A;
+    address payable  B;
+    address payable  C;
+    address payable  D;
+    address payable  E;
+
+    function deposit(address _addr) public payable {
+        balance[_addr][msg.sender] += msg.value;
+    }
+
+    function viewDeposit(address _addr) public view returns(uint) {
+        return balance[_addr][msg.sender];
+    }
+
+    function withDraw(address _addr, uint _n) public {
+        require(balance[_addr][msg.sender] >= _n, "nope");
+        balance[_addr][msg.sender] -= _n;
+        payable(msg.sender).transfer(_n);
+    }
 
 
 }
@@ -101,7 +121,8 @@ contract Q56 {
 
      address public owner;
      address public sub_owner;
-
+     bool isAgreeOwner;
+     bool isAgreeSubOwner;
      
 
 
@@ -111,14 +132,21 @@ contract Q56 {
         sub_owner = _addr;
     }
 
+    function ownerAgree() public {
+        require(msg.sender == owner);
+        isAgreeOwner = true;
+    }
+
     function SubAgree() public {
-     
+        require(msg.sender == sub_owner);
+         isAgreeSubOwner = true;
     }
 
 
 
     function replace(address _Addr) public {
-        require( , "nope");
+        require(isAgreeOwner == true);
+        require(isAgreeSubOwner == true);
         require(msg.sender == owner);
 
         owner = _Addr;
@@ -133,6 +161,8 @@ owner가 변경할 때는 바로 변경가능하게 sub-owner가 변경하려고
 
      address public owner;
      address public sub_owner;
+     bool isAgreeOwner;
+     bool isAgreeSubOwner;
 
 
     constructor(address _addr) {
@@ -147,9 +177,14 @@ owner가 변경할 때는 바로 변경가능하게 sub-owner가 변경하려고
         owner = _Addr;
     }
 
-    function replace2(address _Addr) public {
-        require(msg.sender == sub_owner);
+     function ownerAgree() public {
+        require(msg.sender == owner);
+        isAgreeOwner = true;
+    }
 
+    function replace2(address _Addr) public {
+        require(isAgreeOwner == true);
+        require(msg.sender == sub_owner);
 
         owner = _Addr;
     }
@@ -172,16 +207,40 @@ c는 제한이 없습니다. 각 변수들의 visibility를 설정하세요.
 contract Q59 {
 /*현재시간을 받고 2일 후의 시간을 설정하는 함수를 같이 구현하세요.
 */
+    function getTime() public view returns(uint) {
+        return block.timestamp;
+    }
+
+    function getD_2Day() public view returns(uint) {
+        return block.timestamp + 2 days;
+    }
 
 }
 
 contract Q60 {
-/*1. 방이 2개 밖에 없는 펜션을 여러분이 운영합니다. 각 방마다 한번에 3명 이상 투숙객이 있을 수는 없습니다. 특정 날짜에 특정 방에 누가 투숙했는지 알려주는 자료구조와 그 자료구조로부터 값을 얻어오는 함수를 구현하세요.
+/*1. 방이 2개 밖에 없는 펜션을 여러분이 운영합니다. 각 방마다 한번에 3명 이상 투숙객이 있을 수는 없습니다. 
+특정 날짜에 특정 방에 누가 투숙했는지 알려주는 자료구조와 그 자료구조로부터 값을 얻어오는 함수를 구현하세요.
     
     예약시스템은 운영하지 않아도 됩니다. 과거의 일만 기록한다고 생각하세요.
     
     힌트 : 날짜는 그냥 숫자로 기입하세요. 예) 2023년 5월 27일 → 230527
 */
+
+    uint[2][2] room;
+ 
+    mapping(uint => mapping(uint => string)) guest;
+   
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
