@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Coding test/test10.sol": "TEST1"
+			"Coding test/test10.sol": "A_ta"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"Coding test/test10.sol": {
-			"keccak256": "0xdec4146b94023405e85124108059ed4955e6dc1bc0a90b98fb9cc5b36385bb85",
+			"keccak256": "0x5afb95a636293b64e3c44fa38e51f713e3a4234c9d426a1f9579d43858896e5d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3b329855dd257f3ba0b43fec6b49e42c0e92b07bb5801fef88bc78cbed460991",
-				"dweb:/ipfs/QmPjRwFLN1NNPj9pBYqdpUs69YBBx1nGBQLgaTsy58sCPs"
+				"bzz-raw://8c6ca1113fd1b387aa170ad104cfb4a3aaa9209f66c2709acea728bad6386ebd",
+				"dweb:/ipfs/QmSbm18BuRYf9cm3BTAViyfrybymNzk7SJHVHBbyDMrV3i"
 			]
 		}
 	},
