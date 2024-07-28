@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "FIFO",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity100/sol100(71~80).sol": "Q80"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity100/sol100(71~80).sol": {
+			"keccak256": "0x32b3be5e007c105b44a97bdef82a0cc2da19beb209fe97237b06d3cc67fcbbf0",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://f96020b7428b66e1b2fa6fae97ffa5c13855de10d0b6a296b12a8d6527be101c",
+				"dweb:/ipfs/QmfXfACfTnCiMigYE8rwN33RLsxxm2V7G3kp29xWe5yhoS"
+			]
+		}
+	},
+	"version": 1
+}

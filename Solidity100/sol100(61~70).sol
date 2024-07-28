@@ -44,20 +44,19 @@ contract Q64 {
 /*지갑 주소를 넣으면 5개의 4bytes로 분할하여 반환해주는 함수를 구현하세요.
 */
 
-    // function separate(string memory addr) public pure returns(string[] memory) {
-    //     uint _length = bytes(addr).length;
-    //     string[] memory _letters = new string[](_length);
+    function separate(string memory addr) public pure returns(string[] memory) {
+        uint _length = bytes(addr).length;
+        string[] memory _letters = new string[](_length);
 
-    //     bytes1[] memory _b = new bytes1[](_length);
+        bytes4[] memory _b = new bytes4[](_length);
 
-    //     for(uint i=2; i<_length; i++) {
-    //         _b[i] = bytes(addr)[i];
-    //         _letters[i] = string(abi.encodePacked(_b[i]));    
-    //     }
+        for(uint i=2; i<_length; i++) {
+            _b[i] = bytes(addr)[i];
+            _letters[i] = string(abi.encodePacked(_b[i]));    
+        }
     
-    //     return  _letters;
-    // }
-
+        return  _letters;
+    }
 
 
 }
@@ -137,7 +136,9 @@ contract Q67A is Q67B {
         A = _addr;
     }
 
-    function deposit() public payable {}
+    function deposit() public payable {
+        balance[msg.sender] += msg.value;
+    }
 
     function getBalance() public view returns(uint) {
        return balance[msg.sender];

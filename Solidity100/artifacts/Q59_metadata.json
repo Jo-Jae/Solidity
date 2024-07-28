@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"Solidity100/sol100(51~60).sol": {
-			"keccak256": "0xbcfd4f4c76ae72136d9d71d6a2ffdeabc88ba9d0d74b419ddc3beaae40b1d4d6",
+			"keccak256": "0x9cbf416c2305cceef4c3354bf133fb88e6afec0ff772f3bd6cc4a0e8d88b14ae",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://2831ebe134157c4dee7c5334009659cf0dc619528556b79532d3dc1433103d71",
-				"dweb:/ipfs/QmTkLKHPAo4aqsfRMRHuks583JceBGezYoWLFaLfwMZUWo"
+				"bzz-raw://e1d535a73e752237da454718627b0fe5b14e051ce1b5b7ff03d3ebb32fa44630",
+				"dweb:/ipfs/QmQReUBAXy4fefgZNGWnwENw1giVLLZwuNAVU8rPy2gbuF"
 			]
 		}
 	},

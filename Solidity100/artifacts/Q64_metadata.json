@@ -4,7 +4,27 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "addr",
+						"type": "string"
+					}
+				],
+				"name": "separate",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -57,11 +77,11 @@
 			]
 		},
 		"Solidity100/sol100(61~70).sol": {
-			"keccak256": "0x00731d9553edc1efe654acdb3d187aa786a008032609d703afe8ccf96027798c",
+			"keccak256": "0x26ef4ee3c40a80f9f11d0ec8617b3900e1246fa37ed94fe1eecdff8f7037d99e",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://7d19e4f242f8c92c6af4656a6214cc6ca48a3987395256459b0cbcffb93b43c8",
-				"dweb:/ipfs/Qmejia27stmiKe7hsTcGzRvrccuE6HuHsoPgz5K9Ms3oZp"
+				"bzz-raw://44d31ebc2a1b8e43c8381a8b822344b070db939d2951b4a849acac8368ebdbd8",
+				"dweb:/ipfs/QmXtKUREedfps46JhctihimKkGp8mBg3dnqdBbssRGrfiH"
 			]
 		}
 	},

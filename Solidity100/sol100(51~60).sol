@@ -88,16 +88,23 @@ contract Q54 {
         donators.push(donator(msg.sender, msg.value));
     }
 
-    function top() public view returns(donator[] memory) {
-        // for(uint i = 0; i < donators.length; i++) {
-        //     if()
-        // }
+    function top() public view returns(donator memory) {
+        donator[] memory _donators = donators;
+        for(uint i = 0; i < donators.length; i++) {
+            for(uint j=i+1; j < donators.length; j++) {
+                if(_donators[i]._balance < _donators[j]._balance) {
+                    (_donators[i]._balance, _donators[j]._balance) = (_donators[j]._balance, _donators[i]._balance);
+                }
+            }
+        }
+
+        return _donators[0];
+        }
         
-        return donators;
+     
     }
 
 
-}
 
 contract Q55 {
 /*배포와 함께 owner를 설정하고 owner를 다른 주소로 바꾸는 것은 오직 owner 스스로만 할 수 있게 하십시오.
