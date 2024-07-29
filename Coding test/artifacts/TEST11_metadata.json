@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_l",
+						"type": "string"
+					}
+				],
+				"name": "Lottery",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Coding test/test11.sol": "TEST11"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Coding test/test11.sol": {
+			"keccak256": "0xfb30cae00d4a6a8ebb02752577e92c58fbccf0dac00fbdfeff8915dcfcdd0882",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://a13aee5505eee5cc58338c3af1fbbfc33c754645df6c9084e821833aaa2f56c0",
+				"dweb:/ipfs/QmZPS9EwkNaZxPozUMp751Zs2C4G26gR2BrtSGH1BfPixB"
+			]
+		}
+	},
+	"version": 1
+}
