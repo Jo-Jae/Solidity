@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_a",
+						"type": "uint256"
+					}
+				],
+				"name": "ChangeA",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Solidity100/sol100(81~90).sol": "Q87B"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Solidity100/sol100(81~90).sol": {
+			"keccak256": "0x93d7e5165c1d24973edc957e4142b6d6b836958525f21a19ef91e47f303b3071",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c67bb75937e4fddcbb41123c32d56494568493eee0e5c065046ba7161e7d0a64",
+				"dweb:/ipfs/QmWhnaSGwWskBeeH4Ca8T6FMybTsdK6fCgncrgN8Vgt2ch"
+			]
+		}
+	},
+	"version": 1
+}

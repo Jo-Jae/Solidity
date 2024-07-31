@@ -4,7 +4,55 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_score",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_grade",
+						"type": "string"
+					}
+				],
+				"name": "pushStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_score",
+						"type": "uint256"
+					}
+				],
+				"name": "setGrade",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -18,7 +66,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Coding test/test11.sol": "TEST1"
+			"Coding test/test0.sol": "TEST1"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +80,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Coding test/test11.sol": {
-			"keccak256": "0x033563d271f67c1801390a96c31de2919ae38977d93488e9ab3dce9bef9921cf",
+		"Coding test/test0.sol": {
+			"keccak256": "0x9615acb1a105fc1f3562ae29ad0389668e4b7a50876d707116dde2425209344f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e7371c089fc800126fb4eea43023e8bdd5adf1c88926ff8f913c0cb1e2536552",
-				"dweb:/ipfs/QmRAAyvMCBSh8PPconu5o3GPKDnH6WcJG99HrfNCC1nXZG"
+				"bzz-raw://e8ab3ef208746a879672b6f8998b5835006bff01c14d4756138542b55e807c4e",
+				"dweb:/ipfs/QmTQaBpG4jFgjNw7Cv6AP72n4j1idjj25iJ7gc4JyMrAfb"
 			]
 		}
 	},
