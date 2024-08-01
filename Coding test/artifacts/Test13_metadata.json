@@ -1,0 +1,110 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "_num",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "_num2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "pushNum",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "pushNum2",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Coding test/test13.sol": "Test13"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Coding test/test13.sol": {
+			"keccak256": "0x8bb22b929f761a14032fe526b677aaae3004c849f3382e66b1bcd3d4a95f3745",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://37c9dd5cf0ed46783dc93cfa0d0929912bd4486ac27489a28f2478c971cf0f23",
+				"dweb:/ipfs/QmPdeFMfjxN1hsymCtANyvjNRFLMPfjKkCeJ37bPAu5JRH"
+			]
+		}
+	},
+	"version": 1
+}

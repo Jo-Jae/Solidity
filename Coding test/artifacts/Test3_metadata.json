@@ -4,82 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_ID",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_PW",
-						"type": "string"
-					}
-				],
-				"name": "CheckId",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "pushA_IDPW",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_ID",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_PW",
-						"type": "string"
-					}
-				],
-				"name": "setV_IDPW",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_PW",
-						"type": "string"
-					}
-				],
-				"name": "setV_PW",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -93,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Coding test/test3.sol": "Test3"
+			"Coding test/test13.sol": "Test3"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -107,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Coding test/test3.sol": {
-			"keccak256": "0xd264794c620aec95426bd2749e31a9e4d07498165399ead6f9078c89cf1a8238",
+		"Coding test/test13.sol": {
+			"keccak256": "0xc18be571f8fe2000ffdadd6590aaa6a24a444369e5bbbb810da7190972503ca3",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4ef324c7173cdd8a9aef9a9a141d6bd6eca2698e55a3359d60f8a50e2029b935",
-				"dweb:/ipfs/Qmc1T7Eu3Cn8jsZFVvFStEs5tk38PDMGzTdbsT3ixFmA2d"
+				"bzz-raw://9b71e44862df7f520b86529df4ecdb77807b2667242b74314bb18bbd9a69e44d",
+				"dweb:/ipfs/QmX8xuGU3FAyTPXXAHyfeUAJnaP6cmff9dtZG2t5vAjbfm"
 			]
 		}
 	},
