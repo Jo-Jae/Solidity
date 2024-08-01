@@ -27,8 +27,11 @@ contract IRS {
     function payTaxes() public payable {
         require(msg.value == predict(), "nope") ;
 
+        uint c;
+
         for(uint i=0; i<BankList.length; i++){
-            Bank(payable (BankList[i])).users(msg.sender).paid;
+          ( , , c) = Bank(payable (BankList[i])).users(msg.sender);
+          if(c !=0) {break;}
         }
     }
  }
@@ -38,6 +41,7 @@ contract Bank {
     struct User {
         address _addr;
         uint balance;
+        uint paid;
     }
 
     receive() external payable { }
@@ -87,5 +91,17 @@ contract Bank {
         users[msg.sender].balance -= _n;
         _bank.transfer(_n);
         Bank(_bank)._deposit(_user, _n);
+    }
+}
+
+contract BREAK {
+    uint[] numbers = [8,14,2,19,20,35,17];
+
+    function getNumber() public view returns(uint) {
+        uint i;
+        for(i=0; i<numbers.length; i++) {
+            if(numbers[i]%5==0) {break;}
+    }
+    return i+1;
     }
 }
